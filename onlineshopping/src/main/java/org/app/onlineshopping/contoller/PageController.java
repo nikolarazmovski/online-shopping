@@ -14,7 +14,41 @@ public class PageController {
 
 		ModelAndView mv = new ModelAndView("page");
 
-		mv.addObject("greeting", "Welcome to Spring Web MVDC");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome",true);
+		return mv;
+
+	}
+	
+	@RequestMapping(value = { "/about" })
+	public ModelAndView about() {
+
+		ModelAndView mv = new ModelAndView("page");
+
+		mv.addObject("title", "About");
+		mv.addObject("userClickAbout",true);
+		return mv;
+
+	}
+	
+	@RequestMapping(value = { "/listProducts" })
+	public ModelAndView listProducts() {
+
+		ModelAndView mv = new ModelAndView("page");
+
+		mv.addObject("title", "ViewProducts");
+		mv.addObject("userClickViewProducts",true);
+		return mv;
+
+	}
+	
+	@RequestMapping(value = { "/contact" })
+	public ModelAndView contact() {
+
+		ModelAndView mv = new ModelAndView("page");
+
+		mv.addObject("title", "Contact Us");
+		mv.addObject("userClickContact",true);
 		return mv;
 
 	}
