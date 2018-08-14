@@ -16,6 +16,14 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- YOU LINK THE BACKEND TO THE FORNTEND TROUGH DEPENDENCY LIKE THIS -->
+		<dependency>
+			<groupId>org.app</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- JAVA EE API -->
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
@@ -40,9 +48,9 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.vresion}</version>
 		</dependency>
-		
+
 		<!-- JSTL DEPENDECY -->
-		
+
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
